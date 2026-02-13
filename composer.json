@@ -1,0 +1,26 @@
+{
+    "name": "ocolin/bx-auth",
+    "description": "Tool for authenticating using Billmax Auth database",
+    "require": {
+        "ocolin/easydb": "^2.1",
+        "ocolin/easyenv": "^2.8",
+        "php": "^8.2",
+        "ext-pdo": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^13.0",
+        "phpstan/phpstan": "^2.1"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ocolin\\BxAuth\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Colin Miller",
+            "email": "ocolin@cruzio.com"
+        }
+    ]
+}
