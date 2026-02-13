@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f926a8e769bb9459c3b23e71d05dec7f",
+    "content-hash": "7a026e64b5e76e9296f81c1326ed95fd",
     "packages": [
         {
             "name": "ocolin/easydb",
@@ -99,6 +99,51 @@
                 "source": "https://github.com/ocolin/EasyEnv/tree/2.8"
             },
             "time": "2025-11-11T17:29:15+00:00"
+        },
+        {
+            "name": "ocolin/global-type",
+            "version": "1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ocolin/GlobalType.git",
+                "reference": "fbcabbb925ae55577aee33e4a678d680e19238a0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ocolin/GlobalType/zipball/fbcabbb925ae55577aee33e4a678d680e19238a0",
+                "reference": "fbcabbb925ae55577aee33e4a678d680e19238a0",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^2.1",
+                "phpunit/phpunit": "^12.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Ocolin\\GlobalType\\": "src/",
+                    "Ocolin\\GlobaleType\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Colin Miller",
+                    "email": "ocolin@cruzio.com"
+                }
+            ],
+            "description": "Simple library for making sure global variables are of a specific type",
+            "support": {
+                "issues": "https://github.com/ocolin/GlobalType/issues",
+                "source": "https://github.com/ocolin/GlobalType/tree/1.6"
+            },
+            "time": "2026-01-06T16:46:00+00:00"
         }
     ],
     "packages-dev": [
