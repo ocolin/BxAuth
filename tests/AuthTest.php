@@ -57,8 +57,11 @@ class BxAuthTest extends TestCase
     public function testCheckLoginGood() : void
     {
         $output = self::$bxAuth->check_login();
-        self::assertTrue( $output );
-        //var_dump( $output );
+        self::assertIsObject( $output );
+        self::assertEquals( $_ENV['TEST_USERNAME'], $output->user );
+        self::assertNotEmpty( $_SESSION );
+        //self::assertTrue( $output );
+        //print_r( $output );
     }
 
     public function testLoginFailUser() : void
@@ -103,5 +106,4 @@ class BxAuthTest extends TestCase
             pass: $_ENV['TEST_PASS'],
         );
     }
-
 }

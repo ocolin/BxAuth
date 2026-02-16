@@ -117,14 +117,20 @@ class BxAuth
     /**
      * Check if user is logged in.
      *
-     * @return bool Is user logged in?
+     * @return AuthData | false User data if logged in, false if not.
      */
-    public static function check_Login() : bool
+    public static function check_Login() : AuthData | false
     {
-        return (
+        if(
             session_status() === PHP_SESSION_ACTIVE AND
             !empty( $_SESSION['LOGGED_IN'] )
-        );
+        ) {
+            $data = $_SESSION['AUTH'];
+            unset( $data->password );
+            return $data;
+        }
+
+        return false;
     }
 
 
